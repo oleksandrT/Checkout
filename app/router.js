@@ -6,6 +6,16 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('checkout');
+});
+
+Router.map(function() {
+  this.route('programm');
+  this.route('checkout', function() {
+    this.route('plan');
+    this.route('personal-information');
+    this.route('payment');
+  });
 });
 
 export default Router;
