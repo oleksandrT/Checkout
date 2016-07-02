@@ -1,0 +1,28 @@
+{{checkout-title class="title" title="Checkout Information"}}
+
+<table class="checkout-info">
+  {{#each model as |product|}}
+    <tr>
+        <td>
+            <img src="{{product.image}}" alt="Product">
+        </td>
+        <td>
+            {{product.title}}
+        </td>
+        <td class="price">
+            <div class="amount"><a href="#">-</a><input type="text" placeholder="1" disabled><a href="#">+</a></div>
+            &pound; {{product.price}}
+        </td>
+    </tr>
+  {{/each}}
+    <tr>
+        <td></td>
+        <td>Shipping</td>
+        <td class="price">&pound; 15</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Total</td>
+        <td class="price">&pound; {{sum 1 2 3}}</td>
+    </tr>
+</table>

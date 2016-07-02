@@ -107,4 +107,61 @@ a:hover {
     text-decoration: none;
   }
 
+  .checkout-main .content {
+    display: flex;
+  }
 
+  .checkout-main .products-list {
+    background-color: #c0c0c0;
+    flex: 1;
+    padding: 20px;
+  }
+
+  .checkout-main .datails {
+    flex: 2;
+    padding: 20px;
+  }
+
+.checkout-form label {
+  display: block;
+}
+
+.checkout-form input {
+  width: 100%;
+  border: 1px solid #c0c0c0;
+  font-size: 1rem;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.checkout-info {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+  .checkout-info td {
+    border: 1px solid #c0c0c0;
+    width: 33.333%;
+  }
+
+  .checkout-info td.price {
+    text-align: center;
+  }
+
+  .checkout-info .amount {
+    display: inline-block;
+  }
+
+    .checkout-info .amount a {
+      border: 1px solid #c0c0c0;
+      padding: 1px 6px;
+      line-height: 1.2em;
+    }
+    .checkout-info .amount input {
+      border: 1px solid #c0c0c0;
+      padding: 0 5px;
+      line-height: 1.2em;
+      font-size: 1em;
+      width: 1.5em;
+      text-align: center;
+    }

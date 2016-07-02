@@ -1,1 +1,16 @@
-<h1>payment</h1>
+{{checkout-title class="title" title="Payment" steps=true}}
+
+<div class="content">
+    <div class="products-list">
+      {{#each model as |product|}}
+          <div>
+              Product {{product.title}} - price: {{product.price}} <br>
+              <img src="{{product.image}}" alt="Product">
+          </div>
+      {{/each}}
+    </div>
+    <div class="datails">
+        <p>Payment info</p>
+        <a href="#" class="btn">Checkout</a>
+    </div>
+</div>

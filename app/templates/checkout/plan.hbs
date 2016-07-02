@@ -1,3 +1,17 @@
-{{checkout-title}}
+{{checkout-title class="title" title="Personal Plan" steps=true}}
 
-
+<div class="content">
+    <div class="products-list">
+      {{#each model as |product|}}
+          <div>
+              Product {{product.title}} - price: {{product.price}} <br>
+              <img src="{{product.image}}" alt="Product">
+          </div>
+      {{/each}}
+    </div>
+    <div class="datails">
+        <div><label><input type="radio" name="plan" value="oneday"> 1-Day plan</label></div>
+        <div><label><input type="radio" name="plan" value="threemonth"> 3-Month plan</label></div>
+        {{#link-to 'checkout.personalinformation' class="btn"}}Next{{/link-to}}
+    </div>
+</div>

@@ -1,0 +1,29 @@
+{{checkout-title class="title" title="Personal Information" steps=true}}
+
+<div class="content">
+    <div class="products-list">
+      {{#each model as |product|}}
+          <div>
+              Product {{product.title}} - price: {{product.price}} <br>
+              <img src="{{product.image}}" alt="Product">
+          </div>
+      {{/each}}
+    </div>
+    <div class="datails">
+        <form action="/" method="post" class="checkout-form">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <input type="text" id="country">
+            </div>
+        </form>
+        {{#link-to 'checkout.payment' class="btn"}}Next{{/link-to}}
+    </div>
+</div>
