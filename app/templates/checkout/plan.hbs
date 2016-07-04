@@ -1,4 +1,4 @@
-{{checkout-title class="title" title="Personal Plan" steps=true}}
+{{checkout-title title="Personal Plan" steps=true}}
 
 <div class="content">
     <div class="products-list">
@@ -12,6 +12,6 @@
     <div class="datails">
         <div><label><input type="radio" name="plan" value="oneday"> 1-Day plan</label></div>
         <div><label><input type="radio" name="plan" value="threemonth"> 3-Month plan</label></div>
-        {{#link-to 'checkout.personalinformation' class="btn"}}Next{{/link-to}}
+        {{#link-to 'checkout.personalinformation' class="btn" disabled=false}}Next{{/link-to}}
     </div>
 </div>
